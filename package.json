@@ -1,0 +1,24 @@
+{
+  "name": "alura2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/gori2016/Estudos-Alura---React-NodeJs#readme",
+  "bugs": {
+    "url": "https://github.com/gori2016/Estudos-Alura---React-NodeJs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gori2016/Estudos-Alura---React-NodeJs.git"
+  },
+  "license": "ISC",
+  "author": "Igor Borges",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}
