@@ -1,18 +1,53 @@
-AuraBooks Server ⚙️📚O AuraBooks Server é a API REST que sustenta a plataforma AuraBooks. Desenvolvido com o ecossistema Node.js, ele gerencia a persistência de dados, a lógica de autenticação e o fornecimento de informações para o front-end em React.🚀 TecnologiasEste projeto utiliza as seguintes tecnologias:Node.js - Ambiente de execução JavaScript server-side.Express - Framework web rápido e minimalista.CORS - Habilitação de requisições de diferentes origens (essencial para o Front-end).Dotenv - Gerenciamento de variáveis de ambiente.Nodemon - Atualização automática do servidor em desenvolvimento.📦 Instalação e Uso1. Clonar o repositórioBashgit clone https://github.com/gori2016/AuraBooks_Server.git
+📚 AuraBooks Server
+
+API backend do projeto AuraBooks, desenvolvida com Node.js e Express, responsável pelo gerenciamento de livros.
+
+🚀 Tecnologias utilizadas
+Node.js
+Express
+JavaScript (ES6+)
+📦 Funcionalidades
+📖 Listar todos os livros
+🔍 Buscar livro por ID
+➕ Adicionar novos livros
+✏️ Atualizar informações de livros
+❌ Remover livros
+
+
+⚙️ Como rodar o projeto
+1. Clonar o repositório
+
+git clone https://github.com/gori2016/AuraBooks_Server.git
+
+2. Acessar a pasta
 cd AuraBooks_Server
-2. Instalar dependênciasBashnpm install
-3. Configurar variáveis de ambienteCrie um arquivo .env na raiz do projeto e preencha as informações necessárias (exemplo):Snippet de códigoPORT=3001
-DB_URL=sua_conexao_com_banco
-JWT_SECRET=sua_chave_secreta
-4. Executar o servidorPara ambiente de desenvolvimento (com auto-reload):Bashnpm run dev
-Para ambiente de produção:Bashnpm start
-🛣️ Estrutura de Rotas (Sugestão)MétodoRotaDescriçãoGET/booksRetorna a lista de todos os livros.GET/books/:idRetorna detalhes de um livro específico.POST/users/loginAutentica o usuário e retorna um token.POST/users/registerCria uma nova conta de usuário.📁 Organização do ProjetoPlaintext├── src
-│   ├── controllers/  # Lógica das rotas
-│   ├── models/       # Definição de dados e schemas
-│   ├── routes/       # Definição dos endpoints
-│   ├── config/       # Configurações (Banco, etc)
-│   └── index.js      # Ponto de entrada (App Express)
-├── .env.example      # Exemplo de variáveis de ambiente
-└── package.json      # Dependências e scripts
-💻 Integração com o Front-endEste servidor foi criado para alimentar o AuraBooks_FrontEnd. Certifique-se de que o servidor esteja rodando antes de iniciar a interface React.🤝 ContribuindoFaça um Fork do projeto.Crie uma Branch para sua modificação (git checkout -b feature/nova-rota).Dê um Commit nas alterações (git commit -m 'Add: nova rota de busca').Faça um Push (git push origin feature/nova-rota).Abra um Pull Request.Desenvolvido com ☕ por gori2016
- 
+
+3. Instalar dependências
+npm install
+
+4. Rodar o servidor
+npm run dev
+
+| Método | Rota        | Descrição             |
+| ------ | ----------- | --------------------- |
+| GET    | /livros     | Lista todos os livros |
+| GET    | /livros/:id | Busca livro por ID    |
+| POST   | /livros     | Cria um novo livro    |
+| PUT    | /livros/:id | Atualiza um livro     |
+| DELETE | /livros/:id | Remove um livro       |
+
+📌 Exemplo de requisição
+Criar um livro
+POST /livros
+{
+  "id": 1,
+  "nome": "Livro exemplo"
+}
+
+🧠 Objetivo do projeto
+
+Este projeto foi desenvolvido com o objetivo de:
+
+Praticar construção de APIs REST
+Aprender conceitos de backend com Node.js
+Trabalhar com rotas, controllers e manipulação de dados
