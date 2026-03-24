@@ -15,3 +15,4 @@ Para ambiente de produção:Bashnpm start
 ├── .env.example      # Exemplo de variáveis de ambiente
 └── package.json      # Dependências e scripts
 💻 Integração com o Front-endEste servidor foi criado para alimentar o AuraBooks_FrontEnd. Certifique-se de que o servidor esteja rodando antes de iniciar a interface React.🤝 ContribuindoFaça um Fork do projeto.Crie uma Branch para sua modificação (git checkout -b feature/nova-rota).Dê um Commit nas alterações (git commit -m 'Add: nova rota de busca').Faça um Push (git push origin feature/nova-rota).Abra um Pull Request.Desenvolvido com ☕ por gori2016
+ 
